@@ -1,12 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Cyruss Amante | Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyruss Amante | Home</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
- <h1>Cyruss Amante</h1>
- <div id = "Introduction">
-   <p>Hey there! I'm Cyruss Amante, an engineering student at McMaster University</p>
- </div>
- <div id ="Work">
-   <h2>Work</h2>
-   <p>Check out some of my work! <br><strong>Please note:</strong>this website is <em>not</em> finished yet!</br></p>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Cyruss<span>Amante</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a class="main-nav-text" href="#">Home</a></li>
+                    <li><a class="main-nav-text" href="#">Work</a></li>
+                    <li><a class="main-nav-text" href="#">Contact</a></li>
+                </ul>
+                <ul id="socials" class="social-nav">
+                    <li class="github-cta"><a class="social" href="https://github.com/cyrussamante/"><img src="images/github.svg" alt="GitHub"></a></li>
+                    <li class="linkedin-cta"><a class="social" href="https://www.linkedin.com/in/cyrussamante/"><img src="images/linkedin.svg" alt="Linkedin"></a></li>
+                    <li class="mail-cta"><a class="social" href="mailto: cyruss@cyrussamante.com"><img src="images/email.svg" alt="Email"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="top-row">
+                <h1>Hey there!<br>My name is <br>Cyruss Amante</br></br></h1>
+                <p class="subhead">Engineering Student, McMaster University</p>
+                <div class="hero-cta">
+                    <a href="#about-me" class="about-cta">About Me</a>
+                </div>
+            </div>
+        <img src="images/png.svg" class="hero-img" alt="Cyruss Amante standing">
+        </div>
+    </section>
+
+    <section class="recent-projects">
+        <div class="container">
+            <h2 class="project-title"><span class="rectangle-left"></span>Most Recent Projects<span class="rectangle-right"></span></h2>
+            <ul>
+                <li><a href="#">
+                    <div class="project">
+                        <div class="hovered-pro">
+                            <img class="hover" src="images/turbinehover.svg" alt="Turbine Simulation" style="width:100%;">
+                            <div class="centered">Renewable<br>Technology</br>Challenge</div>
+                        </div>
+                        <img class="neutral" src="images/turbineneutral.svg" alt="Turbine Simulation" style="width:100%;">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="project">
+                        <div class="hovered-pro">
+                            <img class="hover" src="images/qarmhover.svg" alt="Q Arm Simulation" style="width:100%;">
+                            <div class="centered">Get<br>a</br>Grip!</div>
+                        </div>
+                        <img class="neutral" src="images/qarmneutral.svg" alt="Q Arm Simulation" style="width:100%;">
+                    </div>
+                </a></li>
+
+                <li><a href="#">
+                    <div class="project">
+                        <div class="hovered-pro">
+                            <img class="hover" src="images/websitehover.svg" alt="Website UI Prototype" style="width:100%;">
+                            <div class="centered">Personal<br>Website</br></div>
+                        </div>
+                        <img class="neutral" src="images/websiteneutral.svg" alt="Website UI Prototype" style="width:100%;">
+                    </div>
+                </a></li>
+
+            </ul>
+            <div class="projects-cta">
+                <a href="#" class="works-cta">Additional Works</a>
+            </div>
+        </div>
+    </section>
+    <section class="about-me">
+        <div class="container">
+            <div class="left-col">
+                <p class="name">Cyruss Allen Amante</p>
+                <h2 id="about-me">About Me</h2>
+                <p class="about"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Enim ut sem viverra aliquet eget sit amet 
+                    tellus cras. Sapien faucibus et molestie ac feugiat. Duis
+                     at tellus at urna. Nulla aliquet enim tortor at auctor urna 
+                    nunc id. Sed viverra ipsum nunc aliquet bibendum. Id 
+                    donec ultrices tincidunt arcu non.<br><br>Nec ullamcorper sit amet risus nullam eget felis. Quis risus 
+                    sed vulputate odio ut enim. Odio morbi quis commodo odio. 
+                    Integer malesuada nunc vel risus commodo viverra maecenas 
+                    accumsan lacus. Purus faucibus ornare suspendisse sed nisi 
+                    lacus sed. Dignissim cras tincidunt lobortis feugiat vivamus. 
+                    Dictum fusce ut placerat orci nulla.</br></br>
+                    </p>
+                <img class="cyruss-selfie" src="images/selfie.svg" alt="Profile shot of Cyruss Amante">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <a class="logo" href="#">Cyruss<span>Amante</span></a>
+            <div class="table">
+                    <ul id="horizontal-nav" class="footer-nav">
+                        <li><a class="navfoot" href="#">Home</a></li>
+                        <li><a class="navfoot" href="#">Work</a></li>
+                        <li><a class="navfoot" href="#">Contact</a></li>
+                    <p>© 2021 Cyruss Amante</p>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
 </body>
+</html>

@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --primary-color: #FBFEF9;
+    --secondary-color: #191923;
+    --tertiary-color: #4DC2FF;
+}
+
+body {
+    background: var(--primary-color);
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.navbar {
+    background: var(--secondary-color);
+    padding: 1.5em;
+
+    .logo {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: medium;
+        color: var(--primary-color);
+        font-size: 1.1em;
+
+        span {
+            color: var(--tertiary-color);
+            font-weight: bold;
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em;
+}
+
+.hero {
+    text-align: center;
+    padding-bottom: 0em;
+}
+
+.top-row {
+    h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: var(--secondary-color);
+        line-height: 42px;
+        letter-spacing: -0.01em;
+    }
+
+    .subhead {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 15px;
+        color: var(--secondary-color);
+        margin-top: -5em;
+        margin-left: -0.1em;
+        white-space: nowrap;
+    }
+    
+    .about-cta {
+        border: 4px solid var(--secondary-color);
+        border-radius: 10px;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        text-decoration: none;
+        padding: 1em 1.3em;
+        margin-bottom: 0em;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: medium;
+        display: inline-block;
+    }
+    .about-cta:hover {
+        border: 4px solid var(--secondary-color);
+        border-radius: 10px;
+        background: var(--secondary-color);
+        color: var(--primary-color);
+        text-decoration: none;
+        padding: 1em 1.3em;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: medium;
+        display: inline-block;
+    }
+}
+
+.hero-img {
+    margin-top: -4em;
+    padding-top: 4.6em;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+.recent-projects {
+    padding-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    padding-bottom: 3em;
+
+    .project-title {
+        font-size: 1em;
+    }
+
+    .rectangle-left {
+        height: 3px;
+        width: 55px;
+        margin-right: 0.5em;
+        margin-bottom: 0.3em;
+        display: inline-block;
+        background-color: var(--primary-color);
+    }
+
+    .rectangle-right {
+        height: 3px;
+        width: 55px;
+        margin-left: 0.5em;
+        margin-bottom: 0.3em;
+        display: inline-block;
+        background-color: var(--primary-color);
+    }
+    .project {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .hover {
+        position: relative;
+        top: 0;
+        left: 0;
+        border: 0px solid #000000;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+      
+    .neutral {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border: 0px solid #000000;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    .neutral:hover{
+        background-color: transparent;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        border: 0px solid #000000;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    .hovered-pro {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .centered{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 1.8em;
+        transform: translate(-50%, -50%);
+    }
+
+    .works-cta {
+        border: 5px solid var(--tertiary-color);
+        border-radius: 10px;
+        background: var(--secondary-color);
+        color: var(--tertiary-color);
+        text-decoration: none;
+        padding: 1em 5em;
+        margin-top: 1em;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: medium;
+        display: inline-block;
+    }
+
+    .works-cta:hover {
+        border: 5px solid var(--tertiary-color);
+        border-radius: 10px;
+        background: var(--tertiary-color);
+        color: #001E2E;
+        text-decoration: none;
+        margin-top: 1em;
+        padding: 1em 5em;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: medium;
+        display: inline-block;
+    }
+}
+.about-me {
+    text-align: center;
+    padding-top: 3.5em;
+    .left-col {
+        .name {
+            text-transform: uppercase;
+            color: #818181;
+            font-weight: medium;
+            font-size: 1em;
+            margin-bottom: -0.5em;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: var(--secondary-color);
+            font-weight: medium;
+            font-size: 4em;
+            margin-top: 0.05em;
+        }
+
+        .about{
+            color: var(--secondary-color);
+            font-weight: 300;
+            font-size: 1.2em;
+            margin-top: -2em;
+            margin-bottom: 0em;
+
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    background: var(--secondary-color);
+    margin-bottom: 0em;
+    padding-top: 2em;
+
+    .logo {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: medium;
+        color: var(--primary-color);
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+        padding-top: 0em;
+
+        span {
+            color: var(--tertiary-color);
+            font-weight: bold;
+        }
+    }
+
+    p {
+        color: var(--tertiary-color);
+        font-weight: 300;
+        font-size: 0.9em;
+        margin-top: 0.5em;
+    }
+
+    .table {
+        display: table; 
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        font-weight: 300;
+    }
+
+    .navfoot:hover {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+    ul#horizontal-nav {
+        min-width: 50px;
+        list-style: none;
+        padding-top: 0.5em;
+        margin-bottom: -4em;
+        }
+
+        ul#horizontal-nav li {
+            display: inline;
+            padding-left: 1em;
+            padding-right: 1em;
+
+        }
+
+}
+
+
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: var(--secondary-color);
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1.3em;
+            text-align: right;
+            display: block;
+            line-height: 2em;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.3em;
+            text-align: right;
+            display: block;
+            line-height: 2em;
+        }
+        
+    }
+
+    .social-nav {
+        text-align: right;
+        padding-top: 0.5em;
+        li {
+            display: inline-block;
+            padding-left: 1em;
+        }
+        
+    }
+
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit{
+        display: none;
+    }
+    
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        .main-nav-text{
+            font-size: 0.9em;
+            padding: 1.3em 3em;
+            margin-top: -.2em;
+            margin-bottom: -10em;
+            padding-left: 5em;
+            padding-right: 1em;
+            margin-left: 0em;
+            line-height: 0em;
+
+        }
+
+        ul.primary-nav {
+            margin: 0;
+
+            
+            .current a {
+            font-weight: 500;
+            }
+        }
+
+        ul.social-nav {
+            padding-left: 2em;
+            margin-top: -0.7em;
+            margin-right: 2em;
+            margin-bottom: -10em;
+    
+        }
+
+
+        .github-cta {
+            padding-right: .5em;
+        }
+
+        .linkedin-cta {
+            padding-right: .5em;
+        }
+
+        .email-cta {
+            padding-right: .5em;
+        }
+    }
+
+    .main-nav-text:hover {
+        font-weight: 300;
+        text-decoration: underline;
+        text-underline-offset: 0.5em;
+
+    }
+
+    .hero {
+        padding-top: 15em;
+        .top-row {
+            text-align: left;
+            float: left;
+            margin: 0em;
+            margin-top: -5em;
+        }
+
+        h1 {
+            font-size: 5em;
+            line-height: 1em;
+            padding: 0em;
+            margin-left: 2em;
+            
+        }
+
+        .subhead {
+            padding: 0em;
+            margin-top: -7.5em;
+            margin-left: 8.5em;
+            font-size: 1.2em;
+        }
+
+        .about-cta {
+            font-size: 1.2em;
+            margin-left: 8.5em;
+        }
+
+        .about-cta:hover {
+            font-size: 1.2em;
+            margin-left: 8.5em;
+        }
+
+        img {
+            display: inline;
+            text-align: right;
+            margin-right: 5em;
+            padding: 0em;
+            width: 30%;
+            height: auto;
+
+        }
+    }
+
+    .recent-projects ul{
+        display: flex;
+
+        .project-title {
+            font-size: 5em;
+        }
+
+        li {
+            max-width: 25%;
+            margin: 1em;
+            margin-left: 6.5em;
+        }
+
+    }
+
+    .about-me {
+        .name{
+            text-align: left;
+            display: flex;
+
+            margin-left: 3em;
+
+        }
+
+        h2 {
+            text-align: left;
+            float: left;
+            display: flex;
+            margin-top: 20em;
+            margin-left: .5em;
+            margin-right: 0em;
+        }
+
+        .about {
+            float: left;
+            display: flex;
+            text-align: left;
+            font-size: 10em;
+            margin-top: 50em;
+            padding-right: 0em;
+            margin-right: 50em;
+            margin-left: 1.5em;
+        }
+
+        .cyruss-selfie {
+            padding: 0em;
+            margin-left: 50em;
+            margin-top: -20em;
+            padding-top: 0em;
+            padding-bottom: 0em;
+            display: inline-block;
+            width: 30%;
+            height: auto;
+
+            
+        }
+
+    }
+}
