@@ -1,0 +1,12 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  flex-grow: 1; /* takes remaining space */
+  padding: 2rem;
+  overflow-y: auto;
+}

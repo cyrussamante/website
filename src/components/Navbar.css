@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  border-right: 1px solid var(--secondary-color);
+  padding: 2em;
+}
+
+.nav-link-text {
+  display: inline-flex;
+  gap: 0.3rem;
+  padding: 1em;
+}
+
+#nav-link-home {
+  font-weight: bold;
+}
+
+.last-name {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
