@@ -1,0 +1,12 @@
+:root {
+    --background-primary: #000411;
+    --primary-color: #D5D5D5;
+    --secondary-color: #3DF0AC;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--background-primary);
+    color: var(--primary-color);
+    scroll-behavior: smooth; 
+}
