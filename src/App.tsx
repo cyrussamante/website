@@ -1,12 +1,11 @@
-import { useState } from "react";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div className="contents">
+      <Navbar />
+      {/* <div className="contents">
         <h2 className="stay-tuned">Stay Tuned!</h2>
         <p className="web-subtitle">My new website is currently</p>
         <h1 className="in-dev">In Development</h1>
@@ -15,8 +14,8 @@ function App() {
           <button onClick={() => setCount((count) => count + 1)}>
             You've clicked this button {count} times!
           </button>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </>
   );
 }
