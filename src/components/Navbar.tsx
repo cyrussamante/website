@@ -8,26 +8,18 @@ function Navbar() {
         Cyruss<span id="dot">.</span>
       </a>
       <ul className="nav-links">
-        <li>
-          <a className="nav-item" href="/">
-            Home
-          </a>
-        </li>
-        <li>
-          <a className="nav-item" href="/about">
-            About
-          </a>
-        </li>
-        <li>
-          <a className="nav-item" href="/experience">
-            Experience
-          </a>
-        </li>
-        <li>
-          <a className="nav-item" href="/projects">
-            Projects
-          </a>
-        </li>
+        {[
+          { label: "Home", href: "/" },
+          { label: "About", href: "/about" },
+          { label: "Experience", href: "/experience" },
+          { label: "Projects", href: "/projects" },
+        ].map(({ label, href }) => (
+          <li key={label}>
+            <a className="nav-item" href={href}>
+              {label}
+            </a>
+          </li>
+        ))}
       </ul>
       <a href="/contact">
         <Button id="contact-btn" variant="secondary" size="md">

@@ -5,28 +5,32 @@
   --color-secondary-light: #3e3e3e;
   --color-accent: #00d09f;
 
+  /* Typography */
   font-family: Inter, sans-serif;
-
-  line-height: 1.5;
   font-weight: 400;
+  line-height: 1.5;
 
+  /* Colors & Scheme */
   color-scheme: light dark;
   color: var(--color-secondary);
   background-color: white;
 
+  /* Font Rendering */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* body {
+/*
+body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-} */
+}
+*/
 
 h1 {
   font-size: 3.2em;

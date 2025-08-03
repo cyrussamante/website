@@ -1,44 +1,46 @@
+/* Reset default margins and paddings */
+body,
 #root {
   margin: 0;
   padding: 0;
 }
 
+/* Navbar styles */
 nav {
-  margin: 0;
-  padding: 1em 8em;
-  max-width: 100vw;
   display: flex;
-  background-color: var(--color-primary);
-  justify-content: space-between;
-  filter: drop-shadow(0 -20mm 20mm var(--color-secondary-light));
-  align-items: center;
   flex-direction: row;
-}
-
-#dot {
-  color: var(--color-accent);
-}
-
-body {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 8em;
   margin: 0;
-  padding: 0;
+  max-width: 100vw;
+  background-color: var(--color-primary);
+  filter: drop-shadow(0 -20mm 20mm var(--color-secondary-light));
 }
 
+/* Logo styles */
 #logo {
   margin: 0;
   font-size: 1.5em;
   font-weight: 800;
 }
 
+/* Dot accent */
+#dot {
+  color: var(--color-accent);
+}
+
+/* Contact button */
 #contact-btn {
   margin-right: auto;
 }
 
+/* Navigation links */
 .nav-links {
   display: flex;
   gap: 3em;
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .nav-item {

@@ -7,13 +7,13 @@ interface ButtonProps {
   children: React.ReactNode;
 }
 
-function Button(props: ButtonProps) {
-  const classNames = `btn btn--${props.variant} btn--${props.size}`;
+const Button: React.FC<ButtonProps> = ({ id, variant, size, children }) => {
+  const classNames = `btn btn--${variant} btn--${size}`;
   return (
-    <button id={props.id} className={classNames}>
-      {props.children}
+    <button id={id} className={classNames}>
+      {children}
     </button>
   );
-}
+};
 
 export default Button;
