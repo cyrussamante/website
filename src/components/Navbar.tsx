@@ -23,7 +23,7 @@ function Navbar() {
           </li>
         ))}
       </ul>
-      <a href="/contact">
+      <a href="mailto:cyruss@cyrussamante.com">
         <Button id="contact-btn" type="button" variant="secondary" size="md">
           Contact Me
         </Button>

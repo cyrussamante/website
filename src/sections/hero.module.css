@@ -1,12 +1,12 @@
-.hero-container {
+.container {
   margin: 0 0;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  height: 89vh;
+  height: 96vh;
 }
 
-.left-section {
+.leftSection {
   display: flex;
   width: fit-content;
   flex-direction: column;
@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-.text-container {
+.textContainer {
   max-width: 70%;
 }
 
@@ -30,11 +30,11 @@ p {
   max-width: 80%;
 }
 
-#hero-btn {
+#heroBtn {
   margin: 1em 0 0 0;
 }
 
-.right-section {
+.rightSection {
   position: relative;
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@ p {
   max-width: 50%;
 }
 
-.circle-backdrop {
+.circleBackdrop {
   width: 100%;
   height: 100%;
   top: 0;
@@ -68,9 +68,9 @@ p {
 .c2 {
   width: 120vh;
   height: 120vh;
-  top: -20%;
+  top: -15%;
   left: 4em;
-  background: var(--color-primary);
+  background: rgb(250, 250, 250);
   z-index: 8;
 }
 
@@ -82,17 +82,17 @@ p {
   z-index: 5;
 }
 
-.left-section,
-.right-section {
+.leftSection,
+.rightSection {
   flex: 1;
 }
 
-.hero-image {
+.heroImage {
   position: absolute;
   width: 40vh;
   height: auto;
   border-radius: 50%;
   z-index: 10;
-  left: 10em;
+  left: 6em;
   filter: drop-shadow(0 0.5em 0.5em rgba(53, 53, 53, 0.5));
 }
