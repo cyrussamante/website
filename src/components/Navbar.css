@@ -1,12 +1,13 @@
-/* Reset default margins and paddings */
 body,
 #root {
   margin: 0;
   padding: 0;
 }
 
-/* Navbar styles */
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,24 +19,20 @@ nav {
   filter: drop-shadow(0 -20mm 20mm var(--color-secondary-light));
 }
 
-/* Logo styles */
 #logo {
   margin: 0;
   font-size: 1.5em;
   font-weight: 800;
 }
 
-/* Dot accent */
 #dot {
   color: var(--color-accent);
 }
 
-/* Contact button */
 #contact-btn {
   margin-right: auto;
 }
 
-/* Navigation links */
 .nav-links {
   display: flex;
   gap: 3em;

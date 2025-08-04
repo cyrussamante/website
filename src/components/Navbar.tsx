@@ -1,6 +1,13 @@
 import "./Navbar.css";
 import Button from "./Button";
 
+const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Experience", href: "/experience" },
+  { label: "Projects", href: "/projects" },
+];
+
 function Navbar() {
   return (
     <nav>
@@ -8,12 +15,7 @@ function Navbar() {
         Cyruss<span id="dot">.</span>
       </a>
       <ul className="nav-links">
-        {[
-          { label: "Home", href: "/" },
-          { label: "About", href: "/about" },
-          { label: "Experience", href: "/experience" },
-          { label: "Projects", href: "/projects" },
-        ].map(({ label, href }) => (
+        {navLinks.map(({ label, href }) => (
           <li key={label}>
             <a className="nav-item" href={href}>
               {label}
@@ -22,7 +24,7 @@ function Navbar() {
         ))}
       </ul>
       <a href="/contact">
-        <Button id="contact-btn" variant="secondary" size="md">
+        <Button id="contact-btn" type="button" variant="secondary" size="md">
           Contact Me
         </Button>
       </a>

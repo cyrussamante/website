@@ -2,18 +2,16 @@ import "./Button.css";
 
 interface ButtonProps {
   id: string;
+  type: "button" | "submit" | "reset";
   variant: string;
   size: string;
   children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ id, variant, size, children }) => {
-  const classNames = `btn btn--${variant} btn--${size}`;
-  return (
-    <button id={id} className={classNames}>
-      {children}
-    </button>
-  );
-};
+const Button = ({ id, type, variant, size, children }: ButtonProps) => (
+  <button id={id} type={type} className={`btn btn--${variant} btn--${size}`}>
+    {children}
+  </button>
+);
 
 export default Button;
