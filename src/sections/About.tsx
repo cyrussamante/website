@@ -1,17 +1,17 @@
-import styles from "./about.module.css";
+import "./About.css";
 
 function About() {
   return (
-    <div className={styles.container}>
-      <section className={styles.leftSection}>
+    <div className="About">
+      <section className="left-section">
         <img
           src="../images/about-image.png"
           alt="A graduation photo of Cyruss Amante."
-          className={styles.aboutImage}
+          className="about-image"
         />
       </section>
-      <section className={styles.rightSection}>
-        <h1 className={styles.about}>About Me</h1>
+      <section className="right-section">
+        <h1 className="about-text">About Me</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           tincidunt quam quis massa molestie congue. Nulla eu ipsum nec massa
